@@ -21,6 +21,7 @@ namespace CheckUserAccountExpiry
             [MewhMethodContract]
             public void ValidateUserAccount()
             {
+              //Try to run sql proc
               try
               {
                 TSql.ExecuteNonQuery("spCheckUserAccountExpiry", this.ConnectionString);
